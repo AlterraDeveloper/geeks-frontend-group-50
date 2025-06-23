@@ -1,0 +1,55 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  gap: 25px;
+}
+
+.block {
+  width: 200px;
+  height: 500px;
+  background-color: black;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  /* gap: 20px; */
+}
+
+.text {
+  font-size: 5rem;
+  letter-spacing: 10px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.buttons button {
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.buttons button + button {
+  margin-top: 20px;
+}
+
+#red.active {
+  background-color: red !important;
+}
+#yellow.active {
+  background-color: yellow !important;
+}
+#green.active {
+  background-color: green !important;
+}
